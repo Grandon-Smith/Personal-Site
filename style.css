@@ -1,0 +1,91 @@
+body {
+  font-family: sans-serif;
+  background-color: fff;
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* Need to look in to making header and footer expand fully across and fully down / up */
+body > header {
+    background-color: #32edc5;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+body p {
+  font-family: "Comic Sans MS"; 
+  font-size: 15px;
+}
+
+header h1 {
+  float: left;
+  padding-left: 1em;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* Trick I looked up to fix the problem of 2 floats in the nav bar */
+
+nav {
+    float: right;
+    display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 8px 20px;
+  padding: 5px;
+}
+/* targets the nav links*/
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 500;
+}
+
+.paris {
+  width: 300px;
+}
+/* just a bit of formatting for the photo*/
+
+ol {
+  display: inline-block;
+}
+
+footer {
+  background-color: #32edc5;
+}
+/* Need to look in to making header and footer expand fully across and fully down / up */
+
+footer > p {
+  text-align: center;
+  width: 100%
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* pseudo-selectors*/
+
+header nav ul a:hover {
+  color: black;
+}
