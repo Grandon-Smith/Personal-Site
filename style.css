@@ -1,91 +1,102 @@
 body {
   font-family: sans-serif;
   background-color: fff;
-  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  font-size: 17px
 }
 
 main {
+  text-align: center;
+  outline: grey solid 2px;
   margin: auto;
-  width: 90%;
+  width: 95%;
+  display: flex-column;
+}
+
+/* -----------styling for header--------------*/
+
+body > header {
+  background-color: tan;
+  padding: 5px 0px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
-}
-/* Need to look in to making header and footer expand fully across and fully down / up */
-body > header {
-    background-color: #32edc5;
-    width: 100%;
-    top: 0;
-    left: 0;
+  /* outline: blue dashed 2px; */
+  display: block;
 }
 
-body p {
-  font-family: "Comic Sans MS"; 
-  font-size: 15px;
-}
-
-header h1 {
-  float: left;
-  padding-left: 1em;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-/* Trick I looked up to fix the problem of 2 floats in the nav bar */
-
-nav {
-    float: right;
-    display: inline-block;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin: 8px 20px;
-  padding: 5px;
-}
-/* targets the nav links*/
-
-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: grey;
-  font-weight: 500;
-}
-
-.paris {
-  width: 300px;
-}
-/* just a bit of formatting for the photo*/
-
-ol {
-  display: inline-block;
-}
-
-footer {
-  background-color: #32edc5;
-}
-/* Need to look in to making header and footer expand fully across and fully down / up */
-
-footer > p {
+h1 {
+  font-size: 40px;
+  /* outline: green 2px dashed; */
+  margin: 10px 0px;
+  /* padding-top: 5px; */
   text-align: center;
-  width: 100%
 }
 
-h2 {
-  margin-top: 40px;
+/* 
+body > header > div > nav {
+  outline: brown 2px dotted;
+  padding: 3px;
+  margin: 5px 10px;
+} */
+
+header > div > nav > ul {
+  /* outline: black 2px dashed; */
+  /* margin: 5px; */
+  padding: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
-/* pseudo-selectors*/
+nav > ul > li {
+  /* outline: black 2px solid; */
+  padding: 5px;
+  margin: 0px 8px;
+}
 
-header nav ul a:hover {
+nav > ul > li > a {
+  color: #57435c;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
   color: black;
 }
+
+/* ----------- END styling for header--------------*/
+
+.paris {
+  width: 50%;
+  border-radius: 20%;
+}
+
+
+
+/* -----------  Media Queries--------------*/
+
+
+@media all and (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    padding-left: 40px;
+  }
+
+  header nav {
+    padding-right: 40px;
+  }
+
+  header nav a {
+    font-size: 18px;
+  }
+}
+
+/* -----------  END Media Queries--------------*/
