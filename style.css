@@ -72,8 +72,8 @@ nav > ul > li > a:hover {
 
 /* ----------- START styling for main--------------*/
 
-.paris {
-  width: 50%;
+img {
+  width: 55%;
   border-radius: 20%;
 }
 
@@ -84,10 +84,26 @@ hr {
 
 ol {
   border: 2px solid red;
+  list-style-type: none;
+  margin: 5px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ol li {
   border: 2px dotted black;
+  margin: 5px 8px;
+  width: 60%;
+  list-style-position: inside;
+}
+
+section > div {
+  border: 2px blue solid;
+}
+
+.order {
+  order: 1;
 }
 
 /* ----------- END styling for main--------------*/
@@ -116,17 +132,25 @@ ol li {
   .group {
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
   .item {
     flex: 1;
     margin: 10px;
   }
+
+  img {
+    width: 100%;
+    max-width: 700px;
+  }
   
   .item-double {
     flex: 2;
     margin: 10px;
+  }
+
+  main {
+    width: 85%;
   }
 }
 
