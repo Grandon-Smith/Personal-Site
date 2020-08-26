@@ -11,7 +11,7 @@ main {
   text-align: center;
   outline: grey solid 2px;
   margin: auto;
-  width: 95%;
+  width: 93%;
   display: flex-column;
 }
 
@@ -70,12 +70,27 @@ nav > ul > li > a:hover {
 
 /* ----------- END styling for header--------------*/
 
+/* ----------- START styling for main--------------*/
+
 .paris {
   width: 50%;
   border-radius: 20%;
 }
 
+hr {
+  width: 75%;
+  margin-bottom: 40px;
+}
 
+ol {
+  border: 2px solid red;
+}
+
+ol li {
+  border: 2px dotted black;
+}
+
+/* ----------- END styling for main--------------*/
 
 /* -----------  Media Queries--------------*/
 
@@ -96,6 +111,22 @@ nav > ul > li > a:hover {
 
   header nav a {
     font-size: 18px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .item-double {
+    flex: 2;
+    margin: 10px;
   }
 }
 
