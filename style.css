@@ -13,6 +13,7 @@ main {
   margin: auto;
   width: 93%;
   display: flex-column;
+  margin-bottom: 45px;
 }
 
 /* -----------styling for header--------------*/
@@ -82,29 +83,52 @@ hr {
   margin-bottom: 40px;
 }
 
-ol {
-  border: 2px solid red;
+section > div > ol {
+  /* border: 2px solid red; */
   list-style-type: none;
-  margin: 5px 8px;
+  margin: 0px;
+  padding: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
 }
 
-ol li {
-  border: 2px dotted black;
-  margin: 5px 8px;
-  width: 60%;
+ ol li {
+  /* border: 2px dotted black; */
+  margin: 0px;
+  padding: 3px;
   list-style-position: inside;
 }
 
-section > div {
+/* section > div {
   border: 2px blue solid;
-}
+} */
 
 .order {
   order: 1;
 }
+
+footer {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  background-color: tan;
+}
+
+.bigp {
+  font-size: 18px;
+}
+
+footer p {
+  /* outline: red solid 2px; */
+  text-align: center;
+  margin: 5px;
+}
+
+footer p a {
+  color: #57435c;
+  text-decoration: none;
+}
+
+
 
 /* ----------- END styling for main--------------*/
 
@@ -118,11 +142,11 @@ section > div {
   }
 
   h1 {
-    padding-left: 40px;
+    padding-left: 60px;
   }
 
   header nav {
-    padding-right: 40px;
+    padding-right: 60px;
   }
 
   header nav a {
@@ -150,7 +174,7 @@ section > div {
   }
 
   main {
-    width: 85%;
+    width: 75%;
   }
 }
 
