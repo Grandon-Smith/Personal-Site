@@ -4,12 +4,12 @@ body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  font-size: 17px
+  font-size: 17px;
 }
 
 main {
   text-align: center;
-  /* outline: grey solid 2px; */
+  outline: grey solid 2px;
   margin: auto;
   width: 93%;
   /* display: ; */
@@ -37,13 +37,6 @@ h1 {
   /* padding-top: 5px; */
   text-align: center;
 }
-
-/* 
-body > header > div > nav {
-  outline: brown 2px dotted;
-  padding: 3px;
-  margin: 5px 10px;
-} */
 
 header > div > nav > ul {
   /* outline: black 2px dashed; */
@@ -133,9 +126,7 @@ a:hover {
 form > label, button {
   display: block;
   margin-bottom: 3px;
-  
 }
-
 
 footer {
   padding-bottom: 15px;
