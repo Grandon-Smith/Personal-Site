@@ -1,61 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   background-color: fff;
   margin: 0px;
   padding: 0px;
   width: 100%;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 main {
   text-align: center;
   outline: grey solid 2px;
   margin: auto;
-  width: 93%;
-  /* display: ; */
   margin-bottom: 45px;
 }
 
 /* -----------styling for header--------------*/
 
 body > header {
-  background-color: tan;
+  position: fixed;
+  background-color:rgba(255, 255, 255, 0.795);
   padding: 5px 0px;
   width: 100%;
-  margin-bottom: 30px;
+  z-index: 5;
+  color: black;
+  border-bottom: black 1px solid;
 }
 
-.container {
-  /* outline: blue dashed 2px; */
-  display: block;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
-  font-size: 40px;
-  /* outline: green 2px dashed; */
-  margin: 10px 0px;
-  /* padding-top: 5px; */
+  font-size: 2rem;
   text-align: center;
 }
 
-header > div > nav > ul {
+nav > ul {
   /* outline: black 2px dashed; */
-  /* margin: 5px; */
-  padding: 5px;
   list-style-type: none;
   display: flex;
   justify-content: center;
+
 }
 
 nav > ul > li {
-  /* outline: black 2px solid; */
+  font-size: 1rem;
   padding: 5px;
   margin: 0px 8px;
+  text-align: center;
 }
 
 nav > ul > li > a {
   color: #57435c;
   text-decoration: none;
+  color: black;
 }
 
 nav > ul > li > a:hover {
@@ -66,9 +72,41 @@ nav > ul > li > a:hover {
 
 /* ----------- START styling for main--------------*/
 
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./photos/hero.jpg");
+  height: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 12rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all .25s;
+
+}
+
+.hero-image:hover {
+  transform: scale(1.1);
+  height: 10rem;
+  overflow: hidden;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
 img {
-  width: 60%;
-  border-radius: 20%;
+  width: 50%;
 }
 
 
