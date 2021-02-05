@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -72,20 +73,21 @@ nav > ul > li > a:hover {
 
 /* ----------- START styling for main--------------*/
 
+.hero-spacer {
+
+}
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./photos/hero.jpg");
   height: 10rem;
+  padding-top: 18rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 12rem;
-  margin-bottom: 2rem;
   overflow: hidden;
   transition: all .25s;
-
 }
 
 .hero-image:hover {
@@ -104,25 +106,67 @@ nav > ul > li > a:hover {
   color: white;
 }
 
+/* ----------- END styling for hero --------------*/
 
-img {
-  width: 50%;
+/* ----------- START TECHNOLOGIES LIST --------------*/
+
+.bkg-clr-1 {
+  background-color: rgb(56, 207, 56);
+  padding: 5% 0;
 }
 
-
-hr {
-  width: 75%;
-  margin-bottom: 40px;
-  margin-top: 30px;
+.item {
+  border: white solid 2px;
+  margin: 1%;
 }
 
-section > div > ol {
-  /* border: 2px solid red; */
+.tech-list {
+  border: 2px solid red;
   list-style-type: none;
-  margin: 0px;
+  margin: 2rem 0;
   padding: 0px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-list > li {
+  border: 2px dotted black;
+  margin: auto auto;
+  padding: 5px;
+  list-style-position: inside;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-wrapper {
+  border: 2px solid white;
+  background-color: rgb(233, 156, 156);
+  margin: auto auto;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.logo-img {
+  mix-blend-mode: multiply;
+  width: 100%;
+}
+
+/* ----------- END TECHNOLOGIES --------------*/
+
+/* ----------- START PROJECTS LIST --------------*/
+
+.bkg-clr-2 {
+  background-color: rgb(196, 57, 57);
+  padding: 5% 0;
+}
+hr {
+  width: 75%;
+  margin: 30px auto;
 }
 
 a {
@@ -134,23 +178,22 @@ a:hover {
   color: black;
 }
 
- ol li {
-  /* border: 2px dotted black; */
-  margin: 0px;
-  padding: 3px;
-  list-style-position: inside;
-}
-
-/* section > div {
-  border: 2px blue solid;
-} */
 
 .order {
   order: 1;
 }
 
+.paris {
+  width: 50%;
+  margin: auto auto;
+}
+
+
+
+
+/* 
 .contact {
-  /* outline: red solid 2px; */
+  outline: red solid 2px;
   padding-top: 30px;
   text-align: left;
   padding-left: 30px;
@@ -177,7 +220,6 @@ footer {
 }
 
 footer p {
-  /* outline: red solid 2px; */
   text-align: center;
   margin: 5px;
 }
@@ -186,7 +228,7 @@ footer p a {
   color: #57435c;
   text-decoration: none;
 }
-
+ */
 
 
 /* ----------- END styling for main--------------*/

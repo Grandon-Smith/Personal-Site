@@ -28,6 +28,7 @@
 
 
      <main>
+       <div class="hero-spacer"></div>
         <div class="hero-image">
           <div class="hero-text">
             <h3>A self made dev</h3>
@@ -60,65 +61,84 @@
           </div>
         </div>
 
-        <div class="group">
-         
-          <!-- Add Margin on top of h2 for space after <hr> -->
-            <div class="item order">
-              <img src="https://s30776.pcdn.co/wp-content/uploads/2020/04/AdobeStock_305233591.jpeg" class="center-img" alt="screen of code">
-            </div>
-          <div class="item">
-            <article id="about-me">
-              <header>
-                <h2>
-                  Technologies: 
-                </h2>
-              </header>
-              <section>
-                <p>
-                </p>
-                <div>
-                  <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                  </ol>
-                </div>
-              </section>
-            </article>
-          </div>
-        </div>
-          <hr>
-          <!-- Add Margin on top of h2 for space after <hr> -->
-          <article id="portfolio">
+        <hr>
+        <div class="bkg-clr-1">
+          <article id="about-me" class="item">
             <header>
               <h2>
-                Projects
+                Technologies: 
               </h2>
             </header>
+            <section>
+              <ul class="tech-list">
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-html.png" class="logo-img">
+                  </div>
+                  HTML
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-html.png" class="logo-img">
+                  </div>
+                  HTML
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-html.png" class="logo-img">
+                  </div>
+                  HTML
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-html.png" class="logo-img">
+                  </div>
+                  HTML
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-html.png" class="logo-img">
+                  </div>
+                  HTML
+                </li>
+              </ul>
+            </section>
+          </article>
+        </div>
+          <!-- Add Margin on top of h2 for space after <hr> -->
+        <div class="bkg-clr-2">
+          <article id="portfolio">
+
+            <header>
+              <h2>
+                Portfolio
+              </h2>
+            </header>
+
             <div class="group">
-              <div class="item">
-                <section>
-                  <h3>
-                    <a href="https://thinkfulgrandon.github.io/restaurant-finder/" target="_blank">Restaurant Finder App</a>
-                  </h3>
-                  <a href="https://thinkfulgrandon.github.io/restaurant-finder/" target="_blank">
-                    <img src="/photos/homepage-screenshot.png" alt="Little kid surprised look at a laptop screen">
-                  </a>
-                  <p>
-                    This app allows users to input a city and cuisine
-                    choice and then returns results in a radius of 
-                    downtown. It incorprates HTML, CSS, Jquery and several APIs.
-                    <a href="https://github.com/ThinkfulGrandon/restaurant-finder" target="_blank">Github Repository</a>
-                  </p>
-                </section>
-              </div>
+              <section class="item">
+                <h3>
+                  <a href="https://grandon-smith.github.io/restaurant-finder/" target="_blank">Restaurant Finder App</a>
+                </h3>
+                <a href="https://grandon-smith.github.io/restaurant-finder/" target="_blank">
+                  <img src="/photos/homepage-screenshot.png" alt="Little kid surprised look at a laptop screen" class="paris">
+                </a>
+                <p>
+                  This app allows users to input a city and cuisine
+                  choice and then returns results in a radius of 
+                  downtown. It incorprates HTML, CSS, Jquery and several APIs.
+                  <a href="https://github.com/ThinkfulGrandon/restaurant-finder" target="_blank">Github Repository</a>
+                </p>
+              </section>
               <div class="item">
                 <section>
                   <h3>
                     <a href="https://thinkfulgrandon.github.io/quiz-app/" target="_blank">Anatomy Quiz App</a>
                   </h3>
                   <a href="https://thinkfulgrandon.github.io/quiz-app/" target="_blank">
-                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg" alt="Little kid surprised look at a laptop screen">
+                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg"
+                      alt="Little kid surprised look at a laptop screen"
+                      class="paris">
                   </a>
                   <p>
                     A simple app using entirely HTML CSS and Jquery to render quiz questions
@@ -136,7 +156,9 @@
                     <a href="#">Project Name / app link</a>
                   </h3>
                   <a href="#">
-                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg" alt="Little kid surprised look at a laptop screen">
+                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg" 
+                    alt="Little kid surprised look at a laptop screen"
+                    class="paris">
                   </a>
                   <p>
                     Brief Description of project & stack used.
@@ -150,7 +172,9 @@
                     <a href="#">Project Name / app link</a>
                   </h3>
                   <a href="#">
-                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg" alt="Little kid surprised look at a laptop screen">
+                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg"
+                      alt="Little kid surprised look at a laptop screen"
+                      class="paris">
                   </a>
                   <p>
                     Brief Description of project & stack used.
@@ -160,14 +184,12 @@
               </div>
             </div>
           </article>
-
-          <hr>
-
+        </div>
          
 
       <!-- End of projects section / start of Contact Me -->
 
-      <article class="contact" id="contact">
+      <!-- <article class="contact" id="contact">
             
         <section>
           <div>
@@ -192,7 +214,7 @@
             </div>
           </div>
         </section>
-      </article>
+      </article> -->
       
       <!-----   End of contact me   -------->
 
