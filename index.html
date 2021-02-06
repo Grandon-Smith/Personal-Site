@@ -28,7 +28,6 @@
 
 
      <main>
-       <div class="hero-spacer"></div>
         <div class="hero-image">
           <div class="hero-text">
             <h3>A self made dev</h3>
@@ -37,7 +36,7 @@
           </div>
         </div>
 
-        <div class="group">
+        <div class="group nutshell">
           <div class="item">
             <img src="photos/paris.JPG" class="paris center-img" alt="Selfie of myself on the Eiffel Tower in Paris.">
           </div>
@@ -61,14 +60,15 @@
           </div>
         </div>
 
-        <hr>
         <div class="bkg-clr-1">
           <article id="about-me" class="item">
+
             <header>
               <h2>
                 Technologies: 
               </h2>
             </header>
+
             <section>
               <ul class="tech-list">
                 <li>
@@ -79,50 +79,72 @@
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-html.png" class="logo-img">
+                    <img src="/photos/logo-javascript.png" class="logo-img zoom-in">
                   </div>
-                  HTML
+                  JavaScript
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-html.png" class="logo-img">
+                    <img src="/photos/logo-css.png" class="logo-img zoom-in">
                   </div>
-                  HTML
+                  CSS
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-html.png" class="logo-img">
+                    <img src="/photos/logo-react.png" class="logo-img zoom-out">
                   </div>
-                  HTML
+                  React
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-html.png" class="logo-img">
+                    <img src="/photos/logo-nodejs.png" class="logo-img ">
                   </div>
-                  HTML
+                  NodeJS
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-postgresql.jpg" class="logo-img zoom-in">
+                  </div>
+                  PostgreSQL
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-git.png" class="logo-img zoom-in">
+                  </div>
+                  Git
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="/photos/logo-github.png" class="logo-img zoom-in">
+                  </div>
+                  Github
                 </li>
               </ul>
             </section>
           </article>
         </div>
           <!-- Add Margin on top of h2 for space after <hr> -->
-        <div class="bkg-clr-2">
-          <article id="portfolio">
 
-            <header>
+
+          <article id="portfolio" class="bkg-clr-2">
+
+            <header class="portfolio-header">
               <h2>
                 Portfolio
               </h2>
             </header>
 
             <div class="group">
-              <section class="item">
+
+              <section class="item port-project">
+                <div>
+                  <img src="/photos/homepage-screenshot.png" 
+                    alt="Little kid surprised look at a laptop screen" 
+                    class="portfolio-img">
+                </div>
                 <h3>
-                  <a href="https://grandon-smith.github.io/restaurant-finder/" target="_blank">Restaurant Finder App</a>
+                  <a href="https://grandon-smith.github.io/restaurant-finder/" target="_blank">Let's Eat!</a>
                 </h3>
-                <a href="https://grandon-smith.github.io/restaurant-finder/" target="_blank">
-                  <img src="/photos/homepage-screenshot.png" alt="Little kid surprised look at a laptop screen" class="paris">
-                </a>
                 <p>
                   This app allows users to input a city and cuisine
                   choice and then returns results in a radius of 
@@ -130,61 +152,57 @@
                   <a href="https://github.com/ThinkfulGrandon/restaurant-finder" target="_blank">Github Repository</a>
                 </p>
               </section>
-              <div class="item">
-                <section>
-                  <h3>
-                    <a href="https://thinkfulgrandon.github.io/quiz-app/" target="_blank">Anatomy Quiz App</a>
-                  </h3>
-                  <a href="https://thinkfulgrandon.github.io/quiz-app/" target="_blank">
-                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg"
-                      alt="Little kid surprised look at a laptop screen"
-                      class="paris">
-                  </a>
-                  <p>
-                    A simple app using entirely HTML CSS and Jquery to render quiz questions
-                    from a JS object. It keeps track of your score and total questions as 
-                    you progress as well. Check it out!
-                    <a href="https://github.com/ThinkfulGrandon/quiz-app" target="_blank">Github Repository</a>
-                  </p>
-                </section>
-              </div>
+
+              <section class="item port-project">
+                <h3>
+                  <a href="https://thinkfulgrandon.github.io/quiz-app/" target="_blank">Anatomy Quiz App</a>
+                </h3>
+                <a href="https://thinkfulgrandon.github.io/quiz-app/" target="_blank">
+                  <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg"
+                    alt="Little kid surprised look at a laptop screen"
+                    class="portfolio-img">
+                </a>
+                <p>
+                  A simple app using entirely HTML CSS and Jquery to render quiz questions
+                  from a JS object. It keeps track of your score and total questions as 
+                  you progress as well. Check it out!
+                  <a href="https://github.com/ThinkfulGrandon/quiz-app" target="_blank">Github Repository</a>
+                </p>
+              </section>
+
             </div>
             <div class="group">
-              <div class="item">
-                <section>
-                  <h3>
-                    <a href="#">Project Name / app link</a>
-                  </h3>
-                  <a href="#">
-                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg" 
+              <section class="item port-project">
+                <h3>
+                  <a href="#">Project Name / app link</a>
+                </h3>
+                <a href="#">
+                  <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg" 
+                  alt="Little kid surprised look at a laptop screen"
+                  class="portfolio-img">
+                </a>
+                <p>
+                  Brief Description of project & stack used.
+                  <a href="#">github link</a>
+                </p>
+              </section>
+              <section class="item port-project">
+                <h3>
+                  <a href="#">Project Name / app link</a>
+                </h3>
+                <a href="#">
+                  <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg"
                     alt="Little kid surprised look at a laptop screen"
-                    class="paris">
-                  </a>
-                  <p>
-                    Brief Description of project & stack used.
-                    <a href="#">github link</a>
-                  </p>
-                </section>
-              </div>
-              <div class="item">
-                <section>
-                  <h3>
-                    <a href="#">Project Name / app link</a>
-                  </h3>
-                  <a href="#">
-                    <img src="https://www.lakeshorepublicradio.org/sites/wlpr/files/201912/kid_c_op.jpg"
-                      alt="Little kid surprised look at a laptop screen"
-                      class="paris">
-                  </a>
-                  <p>
-                    Brief Description of project & stack used.
-                    <a href="#">github link</a>
-                  </p>
-                </section>
-              </div>
+                    class="portfolio-img">
+                </a>
+                <p>
+                  Brief Description of project & stack used.
+                  <a href="#">github link</a>
+                </p>
+              </section>
             </div>
           </article>
-        </div>
+
          
 
       <!-- End of projects section / start of Contact Me -->
