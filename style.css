@@ -192,10 +192,6 @@ nav> ul > li > a:hover::before, h1 > a:hover::before {
 
 /* ----------- START TECHNOLOGIES LIST --------------*/
 
-.tech-spacer {
-  height: 30px;
-}
-
 .bkg-clr-1 {
   background-color: var(--clr2);
 }
