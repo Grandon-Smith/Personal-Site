@@ -33,10 +33,21 @@ main {
   max-width: 1500px;
 }
 
+#technologies, #portfolio, #contact {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 /* ----------- UTILITY CLASSES --------------*/
 
-.bump-down {
+.marg-bot {
   margin-bottom: 1rem;
+}
+
+.marg-top {
+  margin-top: 1rem;
 }
 
 .auto-left {
@@ -88,18 +99,18 @@ nav > ul > li {
   text-align: center;
 }
 
-nav > ul > li > a {
+nav > ul > li > a, h1 > a {
   color: var(--clr5);
   text-decoration: none;
   transition: all .25s;
   position: relative;
 }
 
-nav > ul > li > a:hover {
+nav > ul > li > a:hover, h1 > a:hover {
   color: var(--clr1);
 
 }
-nav > ul > li > a::before {
+nav > ul > li > a::before, h1 > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -112,7 +123,7 @@ nav > ul > li > a::before {
   transition: all 0.25s ease-in-out 0s;
 }
 
-nav> ul > li > a:hover::before {
+nav> ul > li > a:hover::before, h1 > a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -180,6 +191,10 @@ nav> ul > li > a:hover::before {
 /* ----------- END NUTSHELL --------------*/
 
 /* ----------- START TECHNOLOGIES LIST --------------*/
+
+.tech-spacer {
+  height: 30px;
+}
 
 .bkg-clr-1 {
   background-color: var(--clr2);
@@ -322,8 +337,9 @@ transform: scale(.80)
   max-width: 8rem;
 }
 
-.port-project > p {
+.port-project p {
   margin-top: 1rem;
+  line-height: 1.3rem;
 }
 
 a {
@@ -334,7 +350,6 @@ a {
 a:hover {
   color: black;
 }
-
 
 .order {
   order: 1;
@@ -450,15 +465,6 @@ footer > div {
 
   /* ----------- START TECHNOLOGIES --------------*/
   
-/* 
-  .logo-img {
-    mix-blend-mode: multiply;
-    width: 100%;
-    height: 100%;
-    border: 0 none;
-    text-decoration: none;
-    display: block;
-  } */
 
   .tech-list {
     /* border: white solid 2px; */
@@ -510,9 +516,9 @@ footer > div {
 
   .text {
     font-size: 1.2rem;
-    width: 15rem;
+    min-width: 9rem;
     max-width: 35%;
-    padding: 16px 32px;
+    padding: 16px 25px;
     cursor: pointer;
   }
 
@@ -562,6 +568,17 @@ footer > div {
 
   .img-wrapper {
     max-width: 12rem;
+  }
+
+  .hero-image {
+    height: 25rem;
+    padding-top: 14rem;
+    background-position: center;
+  }
+
+  .hero-image:hover {
+    height: 25rem;
+    overflow: hidden;
   }
 }
 

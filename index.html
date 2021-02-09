@@ -12,11 +12,11 @@
       <header>
         <div class="header-container">
           <h1>
-            Grandon Smith
+            <a href="#top">Grandon Smith</a>
           </h1>
           <nav>
             <ul>
-              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#technologies">Technologies</a></li>
               <li><a href="#portfolio">My Portfolio</a></li>
               <li><a href="#contact">Contact Me</a></li>
             </ul>
@@ -25,30 +25,24 @@
       </header>
 
      <!-- End of header / nav section-->
-      <div class="hero-spacer-box"></div>
+      <div class="hero-spacer-box" id="top"></div>
 
       <div class="hero-image">
         <div class="hero-text">
-          <h3 class="bump-down">A self made dev</h3>
+          <h3 class="marg-bot">A self made dev</h3>
           <p>Check out my journey with coding so far! 
           </p>
         </div>
       </div>
 
     <main>
-
-        <!-- <div class="hover01 column">
-          <div>
-            <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-            <span>Hover</span>
-          </div>
-        <div> -->
         
 
         <div class="group nutshell">
           <div class="auto-left">
             <figure>
-              <img src="/photos/trail-running.jpg">
+              <img src="/photos/trail-running.jpg"
+              alt="person running on mountain trail with scenic view to the right.">
             </figure>
           </div>
 
@@ -69,9 +63,13 @@
             </article>
           </div>
         </div>
+        <!-- <div id="technologies" class="tech-spacer">
+
+        </div> -->
 
         <div class="bkg-clr-1">
-          <article id="about-me" class="item">
+          <div id="technologies"></div>
+          <article class="item">
 
             <header class="technologies-header">
               <h2>
@@ -83,49 +81,65 @@
               <ul class="tech-list">
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-html.png" class="logo-img">
+                    <img src="/photos/logo-html.png"
+                     class="logo-img"
+                     alt="stock html logo">
                   </div>
                   <span class="exp">HTML</span>
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-javascript.png" class="logo-img zoom-in">
+                    <img src="/photos/logo-javascript.png"
+                     class="logo-img zoom-in"
+                     alt="stock javascrip logo">
                   </div>
                   <span>JavaScript</span>
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-css.png" class="logo-img zoom-in">
+                    <img src="/photos/logo-css.png"
+                     class="logo-img zoom-in"
+                     alt="stock CSS logo">
                   </div>
                   <span>CSS</span>
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-react.png" class="logo-img zoom-out">
+                    <img src="/photos/logo-react.png"
+                     class="logo-img zoom-out"
+                     alt="stock React logo">
                   </div>
                   <span>React</span>
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-nodejs.png" class="logo-img ">
+                    <img src="/photos/logo-nodejs.png" 
+                     class="logo-img" 
+                     alt="stock Node JS logo">
                   </div>
                   <span>NodeJS</span>
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-postgresql.jpg" class="logo-img zoom-in">
+                    <img src="/photos/logo-postgresql.jpg"
+                     class="logo-img zoom-in"
+                     alt="stock postgres ql logo">
                   </div>
                   <span>PostgreSQL</span>
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-git.png" class="logo-img less-zoom-in">
+                    <img src="/photos/logo-git.png"
+                     class="logo-img less-zoom-in"
+                     alt="stock git logo">
                   </div>
                   <span>Git</span>
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="/photos/logo-github.png" class="logo-img more-zoom-in">
+                    <img src="/photos/logo-github.png"
+                     class="logo-img more-zoom-in"
+                     alt="stock github logo">
                   </div>
                   <span>Github</span>
                 </li>
@@ -136,7 +150,8 @@
           <!-- Add Margin on top of h2 for space after <hr> -->
 
 
-        <article id="portfolio" class="bkg-clr-2">
+        <article class="bkg-clr-2">
+          <div id="portfolio"></div>
 
           <header class="portfolio-header">
             <h2>
@@ -157,15 +172,16 @@
                     <a href="https://github.com/Grandon-Smith/Lets-Eat" target="_blank" class="text">Repo</a>
                 </div>
               </div>
-              
-              <p>
-                <h3 class="bump-down">
+              <div class="marg-top">
+                <h3 >
                   Let's Eat!
                 </h3>
-                This app allows users to input a city and cuisine
-                choice and then returns results in a radius of 
-                downtown. It incorprates HTML, CSS, Jquery and several APIs.
-              </p>
+                <p>
+                  This app allows users to input a city and cuisine
+                  choice and then returns results in a radius of 
+                  downtown. It incorprates HTML, CSS, Jquery and several APIs.
+                </p>
+            </div>
             </section>
 
             <section class="item port-project">
@@ -179,30 +195,16 @@
                   <a href="https://github.com/Grandon-Smith/quiz-app" target="_blank" class="text">Repo</a>
                 </div>
               </div>
-              <p>
-                <h3 class="bump-down">
+              <div class="marg-top">
+                <h3>
                   Anatomy Quiz
                 </h3>
-                Think you know your human anatomy? Take this
-                  short quiz and see how you do!
-              </p>
+                <p>
+                  Think you know your human anatomy? Take this
+                    short quiz and see how you do!
+                </p>
+            </div>
             </section>
-
-            <!-- <section class="item port-project">
-              <div>
-                <img src="/photos/quiz-app.png"
-                alt="Little kid surprised look at a laptop screen"
-                class="portfolio-img">
-              </div>
-              <h3>
-                <a href="https://grandon-smith.github.io/quiz-app/" target="_blank">Let's Eat!</a>
-              </h3>
-              <p>
-                Think you know your human anatomy? Take this
-                  short quiz and see how you do!
-                <a href="https://github.com/Grandon-Smith/quiz-app" target="_blank">Github Repository</a>
-              </p>
-            </section> -->
 
           </div>
           <div class="group">
@@ -218,12 +220,15 @@
                   <a href="https://github.com/Grandon-Smith/quiz-app" target="_blank" class="text">Repo</a>
                 </div>
               </div>
-              <p>
-                <h3 class="bump-down">
-                  Anatomy Quiz
+              <div class="marg-top">
+                <h3>
+                  Project Title
                 </h3>
-                Brief Description of project & stack used
-              </p>
+                <p>
+                  
+                  Brief Description of project & stack used
+                </p>
+              </div>
             </section>
 
             <section class="item port-project">
@@ -237,14 +242,17 @@
                   <a href="https://github.com/Grandon-Smith/quiz-app" target="_blank" class="text">Repo</a>
                 </div>
               </div>
-              <p>
-                <h3 class="bump-down">
-                  Anatomy Quiz
+              <div class="marg-top">
+                <h3>
+                  Project Title
                 </h3>
-                Brief Description of project & stack used
-              </p>
+                <p>
+                  
+                  Brief Description of project & stack used
+                </p>
+              </div>
             </section>
-            
+
           </div>
         </article>
 
@@ -252,7 +260,8 @@
 
       <!-- End of projects section / start of Contact Me -->
 
-      <article class="contact" id="contact">
+      <article class="contact">
+        <div id="contact"></div>
             
         <section>
           <div>
