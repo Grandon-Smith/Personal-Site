@@ -12,7 +12,7 @@ html {
   --clr1: #b82601;
   --clr2: #062f4f;
   --clr3: #813772;
-  --clr4: #000;
+  --clr4: rgb(0, 0, 0);
   --clr5: #fff;
 }
 
@@ -138,7 +138,7 @@ nav> ul > li > a:hover::before, h1 > a:hover::before {
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./photos/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./photos/coding2.jpg");
   height: 10rem;
   padding-top: 12rem;
   background-position: center;
@@ -147,6 +147,7 @@ nav> ul > li > a:hover::before, h1 > a:hover::before {
   position: relative;
   overflow: hidden;
   transition: all .25s;
+  box-shadow: 10px 0px 10px 10px #000000a9;
 }
 
 .hero-image:hover {
@@ -192,8 +193,11 @@ nav> ul > li > a:hover::before, h1 > a:hover::before {
 
 /* ----------- START TECHNOLOGIES LIST --------------*/
 
+
 .bkg-clr-1 {
-  background-color: var(--clr2);
+  /* background-color: var(--clr2); */
+  background-color: #1a1a1a;
+  margin: 0 5%
 }
 
 .technologies-header {
@@ -202,16 +206,17 @@ nav> ul > li > a:hover::before, h1 > a:hover::before {
 }
 
 .tech-list {
+  border: white dotted 1px;
   list-style-type: none;
   margin: 0 5%;
   padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .tech-list > li {
-  /* border: white solid 1px; */
+  border: white solid 1px;
   color: var(--clr5);
   margin: auto auto;
   margin-bottom: 1rem;
@@ -222,13 +227,14 @@ nav> ul > li > a:hover::before, h1 > a:hover::before {
   justify-content: center;
 }
 
-/* li > span {
-  border: white dotted 2px;
-} */
+li > span {
+  /* border: white dotted 2px; */
+  padding-top: 1rem;
+}
 
 
 .img-wrapper {
-  /* border: 2px solid rgb(0, 0, 0); */
+  border: 1px solid rgb(0, 0, 0);
   background-color: white;
   margin: auto auto;
   min-width: 5rem;
@@ -236,6 +242,7 @@ nav> ul > li > a:hover::before, h1 > a:hover::before {
   overflow: hidden;
   border-radius: 50%;
   margin-bottom: .5rem;
+  box-shadow: 0px 0px 12px 12px #a2a2a28e;
 }
 
 .logo-img {
@@ -267,6 +274,11 @@ transform: scale(.80)
 
 /* ----------- START PORTFOLIO LIST --------------*/
 
+.specific {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
 .bkg-clr-2 {
   background-color: var(--clr5);
 }
@@ -281,7 +293,7 @@ transform: scale(.80)
   color: var(--clr5);
   width: 85%;
   max-width: 750px;
-  padding: 5%;
+  padding: 0 5% 5% 5%;
   margin: 2rem auto;
 }
 
@@ -426,6 +438,7 @@ footer > div {
     padding-right: 10%;
   }
 
+
   header nav a {
     font-size: 18px;
   }
@@ -461,6 +474,10 @@ footer > div {
 
   /* ----------- START TECHNOLOGIES --------------*/
   
+  .m-left {
+    margin-left: 25%;
+    margin-right: auto;
+  }
 
   .tech-list {
     /* border: white solid 2px; */
