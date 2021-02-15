@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width">
-     <title>Thinkful Portfolio</title>
-     <link href="style.css" rel="stylesheet" type="text/css" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> -->
+      <title>Thinkful Portfolio</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
     
    </head>
 
    <body>
-      <header>
-        <div class="header-container">
+      <header class="header-container">
+        <!-- <div class="header-container"> -->
           <h1>
             <a href="#top">Grandon Smith</a>
           </h1>
@@ -21,16 +23,17 @@
               <li><a href="#contact">Contact Me</a></li>
             </ul>
           </nav>
-        </div>
+        <!-- </div> -->
       </header>
 
       <div class="hero-spacer-box" id="top"></div>
-
-      <div class="hero-image">
-        <div class="hero-text">
-          <h3 class="marg-bot">A self made dev</h3>
-          <p>Check out my journey with coding so far! 
-          </p>
+      <div class="hero-container">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h4>A self made dev</h4>
+            <p>Check out my journey with coding so far! 
+            </p>
+          </div>
         </div>
       </div>
 
@@ -38,14 +41,14 @@
         
 
         <div class="group nutshell">
-          <div class="auto-left">
+          <!-- <div class="auto-left">
             <figure>
               <img src="photos/coding.jpg"
               alt="person running on mountain trail with scenic view to the right.">
             </figure>
           </div>
 
-          <div class="auto-right">
+          <div class="auto-right"> -->
             <article>
                 <header>
                   <h2>
@@ -60,8 +63,13 @@
                   </p>
               </section>
             </article>
-          </div>
+          <!-- </div> -->
         </div>
+
+        <!-- <div class="cont">
+          <div class="box"></div>
+          <div class="box"></div>
+        </div> -->
 
         <div class="bkg-clr-1">
           <div id="technologies"></div>
@@ -85,6 +93,14 @@
                 </li>
                 <li>
                   <div class="img-wrapper">
+                    <img src="photos/logo-css.png"
+                     class="logo-img zoom-in"
+                     alt="stock CSS logo">
+                  </div>
+                  <span>CSS</span>
+                </li>
+                <li>
+                  <div class="img-wrapper">
                     <img src="photos/logo-javascript.png"
                      class="logo-img zoom-in"
                      alt="stock javascrip logo">
@@ -93,9 +109,9 @@
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="photos/logo-css.png"
-                     class="logo-img zoom-in"
-                     alt="stock CSS logo">
+                    <img src="photos/logo-jquery.jpg"
+                     class="logo-img "
+                     alt="stock jQuery logo">
                   </div>
                   <span>CSS</span>
                 </li>
@@ -125,20 +141,21 @@
                 </li>
                 <li>
                   <div class="img-wrapper">
-                    <img src="photos/logo-git.png"
-                     class="logo-img less-zoom-in"
-                     alt="stock git logo">
-                  </div>
-                  <span>Git</span>
-                </li>
-                <li class="m-left">
-                  <div class="img-wrapper">
                     <img src="photos/logo-github.png"
                      class="logo-img more-zoom-in"
                      alt="stock github logo">
                   </div>
                   <span>Github</span>
                 </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="photos/logo-git.png"
+                     class="logo-img less-zoom-in"
+                     alt="stock git logo">
+                  </div>
+                  <span>Git</span>
+                </li>
+                
               </ul>
             </section>
           </article>
@@ -281,6 +298,7 @@
       </article>
 
     </main>
+
       <footer>
         <div class="hidden">
           <a href="tel:402-321-5317">
