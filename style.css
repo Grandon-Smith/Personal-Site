@@ -53,6 +53,7 @@ main {
   margin-top: 1em;
 }
 
+
 .auto-left {
   margin-left: auto;
 }
@@ -322,7 +323,7 @@ transform: scale(.80)
 .tags-container > * {
 background-color: rgb(236, 202, 202);
 color: var(--clr4);
-width: 6rem;
+width: 4rem;
 padding: 0 10px;
 margin: .5em;
 border-radius: 5px;
@@ -394,28 +395,6 @@ a:hover {
 
 /* ----------- END PORTFOLIO LIST --------------*/
 
-/* ----------- START CONTACT --------------*/
-
-/* .contact {
-  outline: red solid 2px;
-  padding-top: 30px;
-  text-align: left;
-  padding-left: 30px;
-}
-
-#name, #user-email, textarea {
-  width: 40%;
-  margin-bottom: 15px;
-}
-
-form > label, button {
-  display: block;
-  margin-bottom: 3px;
-}
- */
-
-
-/* ----------- END CONTACT --------------*/
 
 /* ----------- END styling for main--------------*/
 
@@ -441,6 +420,7 @@ footer > div {
   min-width: 2rem;
   overflow: hidden;
   border-radius: 50%;
+  box-shadow: 0px 0px 10px 10px #a2a2a265;
 }
 
 /* ----------- END FOOTER --------------*/
@@ -568,9 +548,9 @@ footer > div {
 
   .port-project {
     padding: 3%;
-    margin: 3%;
+    margin: 3% 1.5rem;
     line-height: 2em;
-    max-width: 750px;
+    max-width: 700px;
   }
 
   .port-project > p {
@@ -582,31 +562,24 @@ footer > div {
   }
 
 
-/* 
 
 
-  
-  .tags-container {
-    padding: 1em 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .tags-container > * {
-  background-color: rgb(236, 202, 202);
-  color: var(--clr4);
-  width: 40%;
-  max-width: 8rem;
-  min-width: 5rem;
-  padding: .2em .3em;
-  margin: .5em auto;
-  border-radius: 8px;
-  }
- */
+.tags-container {
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-
-
+.tags-container > * {
+padding: 0px;
+margin: .8em;
+border-radius: 8px;
+width: 20%;
+min-width: 5rem;
+}
 
 
   .hover-text {
