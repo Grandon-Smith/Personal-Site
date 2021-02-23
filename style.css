@@ -10,9 +10,9 @@ html {
 }
 
 :root {
-  --clr1: #b82601;
+  --clr1: #0425ff;
   --clr2: #1a1a1a;
-  --clr3: #813772;
+  --clr3: #004775;
   --clr4: rgb(0, 0, 0);
   --clr5: #fff;
   --title-font: 'Audiowide', serif;
@@ -321,7 +321,7 @@ transform: scale(.80)
 }
 
 .tags-container > * {
-background-color: rgb(236, 202, 202);
+background-color: #e3e3e3;
 color: var(--clr4);
 width: 4rem;
 padding: 0 10px;
