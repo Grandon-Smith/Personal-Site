@@ -323,11 +323,10 @@ transform: scale(.80)
 .tags-container > * {
 background-color: #e3e3e3;
 color: var(--clr4);
-width: 4rem;
-padding: 0 10px;
+width: 7rem;
+padding: 0 1em;
 margin: .5em;
 border-radius: 5px;
-flex-basis: 1;
 }
 
 .port-project-title {
@@ -555,32 +554,28 @@ footer > div {
   }
 
   .port-project > p {
-    /* outline: white solid 2px; */
     margin: 1em auto;
     font-size: 1.1rem;
     max-width: 45ch;
     height: 10em;
   }
 
+  .tags-container {
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-
-
-.tags-container {
-  padding: 0;
-  margin: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.tags-container > * {
-padding: 0px;
-margin: .8em;
-border-radius: 8px;
-width: 20%;
-min-width: 5rem;
-}
+  .tags-container > * {
+    padding: 0px;
+    margin: .8em;
+    border-radius: 8px;
+    width: 20%;
+    min-width: 7rem;
+  }
 
 
   .hover-text {
@@ -627,7 +622,7 @@ min-width: 5rem;
   }
 
   .img-wrapper {
-    max-width: 12rem;
+    max-width: 11rem;
   }
 
   .hero-spacer-box {
