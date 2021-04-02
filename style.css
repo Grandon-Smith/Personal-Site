@@ -544,6 +544,7 @@ footer > div {
 
   .group > * {
     flex-basis: 100%;
+    margin: auto auto;
   }
 
   .port-project {
